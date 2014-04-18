@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="co.medicast.plugins.CheckPush"
+    version="0.1.0">
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	<name>CheckPush Plugin</name>
+	<description>Medicast Push Notification Checker</description>
+	<author>Nafis Zebarjadi</author>
+	<license>MIT License</license>
+	<js-module src="www/CheckPush.js" name="CheckPush">
+		<clobbers target="CheckPush" />
+	</js-module>
+
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="CheckPush">
+		    	<param name="ios-package" value="CheckPushPlugin" />
+		    	<param name="onload" value="true"/>
+		 	</feature>
+		</config-file>
+
+		<header-file src="src/ios/CheckPushPlugin.h" />
+		<source-file src="src/ios/CheckPushPlugin.m" />
+	</platform>
+</plugin>

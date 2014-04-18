@@ -1,0 +1,11 @@
+{
+    "version": "0.1.0",
+    "name": "co.medicast.plugins.CheckPush",
+    "cordova_name": "CheckPush",
+    "description": "Medicast CheckPush Plugin",
+    "license": "Apache 2.0",
+    "keywords": [
+        "maps"
+    ],
+    "engines": []
+}
