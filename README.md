@@ -18,6 +18,15 @@ Feel free to submit pull requests.
     cordova plugin add co.medicast.plugins.CheckPush
 ```
 
+### Usage
+
+Install the plugin and make sure it is properly configured in your ```config.xml``` file.  You can use a simple call to see whether push notifications are enabled:
+
+```
+	var enabled = window.plugins.checkpush.isPushEnabled();
+
+```
+
 ### License
 
 MIT License.
